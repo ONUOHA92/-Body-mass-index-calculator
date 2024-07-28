@@ -1,0 +1,137 @@
+.header{
+    width: 1276px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 65px;
+}
+
+.header_blueBox{
+    width: 978px;
+    height: 737px;
+    border-radius: 0px 0px 35px 35px;
+    background: var(--Gradient-1, linear-gradient(290deg, #E7F5FE 0%, rgba(214, 252, 254, 0.00) 100%));
+    padding: 75px 0px 0px 116px;
+}
+
+.header_content{
+    width: 564px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.header_content > h1{
+    width: 460px;
+    color: var(--Gunmetal, #253347);
+    font-family: var(--font);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -3.2px;
+    margin: 0px;
+}
+
+.header_content > p{
+    width: 465px;
+    color: var(--Dark-Electric-Blue, #5E6E85);
+    font-family: var(--font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin: 0px;
+}
+
+.logo{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 92px;
+}
+
+@media(max-width: 1320px){
+    .header{
+        width: 90%;
+    }
+
+    .header_blueBox{
+        width: 76.6457680251%;
+        padding: 75px 0px 0px 66px;
+    }
+
+    .header_content{
+        width: 57.6687116564%;
+    }
+
+    .header_content > h1{
+        width: 100%;
+    }
+
+    .header_content > p{
+        width: 100%;
+    }
+}
+
+
+/* tablet */
+@media(max-width: 880px){
+    .header{
+        width: 100%;
+        margin-bottom: 320px;
+    }
+
+    .header_blueBox{
+        width: 100%;
+        height: 640px;
+        padding: 32px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header_content{
+        width: 90%;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .logo{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 16px;
+    }   
+
+    .header_content > h1{
+        width: 350px;
+        font-size: 3rem;
+        text-align: center;
+        letter-spacing: -2.4px;
+    }
+
+    .header_content > p{
+        text-align: center;
+    }
+}
+
+/* mobile */
+@media(max-width: 550px){
+    .header{
+        margin-bottom: 552px;
+    }
+
+    .header_blueBox{
+        height: 640px;
+    }
+
+    .header_content > h1{
+        width: 327px;
+    }
+
+    .header_content{
+        gap: 24px;    
+    }
+
+    .logo{
+        margin: 0px;
+    }
+
+}

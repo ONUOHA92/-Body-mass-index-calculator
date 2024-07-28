@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/public/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+* {
+  --font: 'Inter';
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+:root{
+  --closest: 100;
+  --closer: 75;
+  --close: 50;
+  --far: 25;
+  --farther: 10;
+  --farthest: 0;
+}

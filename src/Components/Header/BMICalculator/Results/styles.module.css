@@ -1,0 +1,111 @@
+.container{
+    width: 100%;
+    border-radius: 16px 100px 100px 16px;
+    padding: 32px;
+    background-color: var(--Blue, #345FF6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enter{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.enter > h1{
+    color: var(--Pure-White, #FFF);
+    font-family: var(--font);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px;
+    margin: 0px;
+}
+
+.enter > p{
+    color: var(--Pure-White, #FFF);
+    font-family: var(--font);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0px;
+}
+
+.results{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 8px;
+    align-items: center;
+}
+
+.results > h1{
+    color: var(--Pure-White, #FFF);
+    font-family: var(--font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    margin: 0px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.results > strong{
+    color: var(--Pure-White, #FFF);
+    font-family: var(--font);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -3.2px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.results > p{
+    color: var(--Pure-White, #FFF);
+    font-family: var(--font);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    margin: 0px;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.idealWeight{
+    font-weight: 700;
+}
+
+@media(max-width: 550px){
+    .container{
+        border-radius: 16px;
+    }
+
+    .results{
+        grid-template-columns: 1fr;
+    }
+
+    .results > h1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .results > strong{
+        font-size: 3rem;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-bottom: 16px;
+    }
+
+    .results > p{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}
